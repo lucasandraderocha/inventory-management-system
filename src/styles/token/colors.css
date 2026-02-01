@@ -1,0 +1,150 @@
+:root {
+	/* Primitives */
+	/* Main */
+	--m10: oklch(0.9802 0.0255 154.49);
+	--m20: oklch(0.9327 0.0838 154.44);
+	--m30: oklch(0.8933 0.1419 152.65);
+	--m40: oklch(0.86 0.1908 150.47);
+	--m50: oklch(0.8348 0.2293 148.04);
+	--m60: oklch(0.7744 0.2303 146.54);
+	--m70: oklch(0.6466 0.1905 146.73);
+	--m80: oklch(0.509 0.148 146.97);
+	--m90: oklch(0.3646 0.1023 147.61);
+	--m100: oklch(0.1999 0.0489 151.53);
+
+	/* Neutral */
+	--n10: oklch(0.994 0 0);
+	--n20: oklch(0.8853 0 0);
+	--n30: oklch(0.8047 0 0);
+	--n40: oklch(0.7252 0 0);
+	--n50: oklch(0.6401 0 0);
+	--n60: oklch(0.5555 0 0);
+	--n70: oklch(0.464 0 0);
+	--n80: oklch(0.3715 0 0);
+	--n90: oklch(0.2686 0 0);
+	--n100: oklch(0.1591 0 0);
+
+	/* Secondaries */
+	/* Purple */
+	--p10: oklch(0.9238 0.0257 283.48);
+	--p20: oklch(0.815 0.0632 282.9);
+	--p30: oklch(0.7026 0.1064 281.48);
+	--p40: oklch(0.6957 0.1052 281.46);
+	--p50: oklch(0.4871 0.1917 274.63);
+	--p60: oklch(0.4109 0.1811 273.25);
+	--p70: oklch(0.3444 0.1447 273.85);
+	--p80: oklch(0.2733 0.1089 274.45);
+	--p90: oklch(0.1974 0.0676 277.01);
+	--p100: oklch(0.111 0.0226 273.92);
+
+	/* Orange */
+	--o10: oklch(0.9804 0.0127 63.93);
+	--o20: oklch(0.916 0.0565 63.57);
+	--o30: oklch(0.8569 0.1003 63.41);
+	--o40: oklch(0.8009 0.1409 60.76);
+	--o50: oklch(0.7515 0.1735 55.75);
+	--o60: oklch(0.6929 0.181681 50.5765);
+	--o70: oklch(0.5794 0.150469 51.2674);
+	--o80: oklch(0.4712 0.1194 53.12);
+	--o90: oklch(0.3375 0.0836 54.91);
+	--o100: oklch(0.2009 0.0453 64.46);
+
+	/* Red */
+	--r10: oklch(0.9818 0.009 34.3);
+	--r20: oklch(0.8871 0.0599 31.09);
+	--r30: oklch(0.8011 0.1147 32.21);
+	--r40: oklch(0.7252 0.1716 32.81);
+	--r50: oklch(0.6693 0.219751 33.1583);
+	--r60: oklch(0.6224 0.2378 31.7);
+	--r70: oklch(0.5234 0.198564 31.9584);
+	--r80: oklch(0.4202 0.15656 32.6306);
+	--r90: oklch(0.3098 0.1119 33.82);
+	--r100: oklch(0.1906 0.0606 39.35);
+
+	/* Blue */
+	--b10: oklch(0.9446 0.0285 228.05);
+	--b20: oklch(0.8759 0.0637 229);
+	--b30: oklch(0.8104 0.0958 229.76);
+	--b40: oklch(0.7525 0.1236 231.68);
+	--b50: oklch(0.6989 0.1442 236.15);
+	--b60: oklch(0.6069 0.1287 236.99);
+	--b70: oklch(0.4997 0.1038 236.12);
+	--b80: oklch(0.3838 0.0779 235.83);
+	--b90: oklch(0.2613 0.0488 232.93);
+	--b100: oklch(0.2613 0.0488 232.93);
+
+
+
+	/* Semantic */
+	/* Primary */
+	--primary-halo: var(--m10);
+	--primary-light: var(--m20);
+	--primary-soft: var(--m30);
+	--primary-tint: var(--m40);
+	--primary-default: var(--m50);
+	--primary-tone: var(--m60);
+	--primary-dim: var(--m70);
+	--primary-shade: var(--m80);
+	--primary-dark: var(--m90);
+	--primary-deep: var(--m100);
+
+	/* Neutral */
+	--neutral-halo: var(--n10);
+	--neutral-light: var(--n20);
+	--neutral-soft: var(--n30);
+	--neutral-tint: var(--n40);
+	--neutral-default: var(--n50);
+	--neutral-tone: var(--n60);
+	--neutral-dim: var(--n70);
+	--neutral-shade: var(--n80);
+	--neutral-dark: var(--n90);
+	--neutral-deep: var(--n100);
+
+	/* New */
+	--new-halo: var(--p10);
+	--new-light: var(--p20);
+	--new-soft: var(--p30);
+	--new-tint: var(--p40);
+	--new-default: var(--p50);
+	--new-tone: var(--p60);
+	--new-dim: var(--p70);
+	--new-shade: var(--p80);
+	--new-dark: var(--p90);
+	--new-deep: var(--p100);
+
+	/* Error */
+	--error-halo: var(--r10);
+	--error-light: var(--r20);
+	--error-soft: var(--r30);
+	--error-tint: var(--r40);
+	--error-default: var(--r50);
+	--error-tone: var(--r60);
+	--error-dim: var(--r70);
+	--error-shade: var(--r80);
+	--error-dark: var(--r90);
+	--error-deep: var(--r100);
+
+	/* Alert */
+	--alert-halo: var(--o10);
+	--alert-light: var(--o20);
+	--alert-soft: var(--o30);
+	--alert-tint: var(--o40);
+	--alert-default: var(--o50);
+	--alert-tone: var(--o60);
+	--alert-dim: var(--o70);
+	--alert-shade: var(--o80);
+	--alert-dark: var(--o90);
+	--alert-deep: var(--o100);
+
+	/* Info */
+	--info-halo: var(--b10);
+	--info-light: var(--b20);
+	--info-soft: var(--b30);
+	--info-tint: var(--b40);
+	--info-default: var(--b50);
+	--info-tone: var(--b60);
+	--info-dim: var(--b70);
+	--info-shade: var(--b80);
+	--info-dark: var(--b90);
+	--info-deep: var(--b100);
+}

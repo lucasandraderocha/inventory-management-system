@@ -1,0 +1,39 @@
+:root {
+	/* Primitive */
+	/* Micro - Using em */
+	--spc-0: 0;
+	--spc-micro-10: 0.125em;
+	--spc-micro-20: 0.25em;
+	--spc-micro-30: 0.375em;
+	--spc-micro-40: 0.5em;
+	--spc-micro-50: 0.75em;
+	--spc-micro-60: 1em;
+	--spc-micro-70: 1.25em;
+	--spc-micro-80: 1.5em;
+	/* Macro - Using rem */
+	--spc-macro-10: 2rem;
+	--spc-macro-20: 2.5rem;
+	--spc-macro-30: 3rem;
+	--spc-macro-40: 4rem;
+	--spc-macro-50: 5rem;
+	--spc-macro-60: 6rem;
+	/* Semantic */
+	/* Micro */
+	--spacing-micro-0: var(--spc-0);
+	--spacing-micro-2: var(--spc-micro-10);
+	--spacing-micro-4: var(--spc-micro-20);
+	--spacing-micro-6: var(--spc-micro-30);
+	--spacing-micro-8: var(--spc-micro-40);
+	--spacing-micro-12: var(--spc-micro-50);
+	--spacing-micro-16: var(--spc-micro-60);
+	--spacing-micro-20: var(--spc-micro-70);
+	--spacing-micro-24: var(--spc-micro-80);
+	/* Macro */
+	--spacing-macro-32: var(--spc-macro-10);
+	--spacing-macro-40: var(--spc-macro-20);
+	--spacing-macro-48: var(--spc-macro-30);
+	--spacing-macro-64: var(--spc-macro-40);
+	--spacing-macro-80: var(--spc-macro-50);
+	--spacing-macro-96: var(--spc-macro-60);
+	/*  */
+}

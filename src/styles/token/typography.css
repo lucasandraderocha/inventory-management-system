@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	/* Primitive */
+	/* Font Family */
+	--type-main:
+		"Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+		"Segoe UI Symbol";
+
+	/* Font Size */
+	--type-size-10: 0.75rem;
+	--type-size-20: 0.875rem;
+	--type-size-30: 1rem;
+	--type-size-40: 1.125rem;
+	--type-size-50: 1.25rem;
+	--type-size-60: 1.5rem;
+	--type-size-70: 2.5rem;
+	--type-size-80: 4rem;
+	--type-size-90: 5rem;
+	--type-size-100: 0.6rem;
+
+	/* Line Height */
+	/* Link */
+	--type-lh-link-10: 1.5rem;
+	--type-lh-link-20: 1.5rem;
+	--type-lh-link-30: 1.5rem;
+	--type-lh-link-40: 2rem;
+	--type-lh-link-50: 2.5rem;
+
+	/* Label */
+	--type-lh-label-10: 1rem;
+	--type-lh-label-20: 1.5rem;
+	--type-lh-label-30: 1.5rem;
+	--type-lh-label-40: 1.5rem;
+	--type-lh-label-50: 2rem;
+
+	/* Body */
+	--type-lh-body-10: 1.5rem;
+	--type-lh-body-20: 1.5rem;
+	--type-lh-body-30: 1.5rem;
+	--type-lh-body-40: 2rem;
+	--type-lh-body-50: 2.5rem;
+
+	/* Heading */
+	--type-lh-heading-10: 3.5rem;
+	--type-lh-heading-20: 5rem;
+	--type-lh-heading-30: 6rem;
+
+	/* Display */
+	--type-lh-display-10: 6rem;
+	--type-lh-display-20: 7rem;
+
+	/* Letter Spacing */
+	/* Link */
+	--type-lspc-link-10: 0.05em;
+	--type-lspc-link-20: 0em;
+	--type-lspc-link-30: 0em;
+	--type-lspc-link-40: 0.625em;
+	--type-lspc-link-50: 0em;
+
+	/* Label */
+	--type-lspc-label-10: 0.05em;
+	--type-lspc-label-20: 0em;
+	--type-lspc-label-30: 0em;
+	--type-lspc-label-40: 0em;
+	--type-lspc-label-50: 0em;
+
+	/* Body */
+	--type-lspc-body-10: 0.05em;
+	--type-lspc-body-20: 0em;
+	--type-lspc-body-30: 0em;
+	--type-lspc-body-40: 0em;
+	--type-lspc-body-50: 0em;
+
+	/* Heading */
+	--type-lspc-heading-10: 0em;
+	--type-lspc-heading-20: 0.025em;
+	--type-lspc-heading-30: 0.05em;
+
+	/* Display */
+	--type-lspc-display-10: 0.05em;
+	--type-lspc-display-20: 0.05em;
+
+	/* Font Weight */
+	--type-wg-thin: 100;
+	--type-wg-xlight: 200;
+	--type-wg-light: 300;
+	--type-wg-regular: 400;
+	--type-wg-medium: 500;
+	--type-wg-sbold: 600;
+	--type-wg-bold: 700;
+	--type-wg-xbold: 800;
+	--type-wg-black: 900;
+
+	/* Font Style */
+	--type-italic: italic;
+	--type-default: normal;
+
+	/* Semantic */
+	/* Label */
+	/* Label Scope */
+	--text-label-weight: var(--type-wg-);
+	--text-label-family: var(--type-main);
+
+	/* 10 */
+	--text-label-xsm-size: var(--type-size-10);
+	--text-label-xsm-letter-spacing: var(--type-lspc-label-10);
+	--text-label-xsm-line-height: var(--type-lh-label-10);
+
+	/* 20 */
+	--text-label-sm-size: var(--type-size-20);
+	--text-label-sm-letter-spacing: var(--type-lspc-label-20);
+	--text-label-sm-line-height: var(--type-lh-label-20);
+
+	/* 30 */
+	--text-label-md-size: var(--type-size-30);
+	--text-label-md-letter-spacing: var(--type-lspc-label-30);
+	--text-label-md-line-height: var(--type-lh-label-30);
+
+	/* 40 */
+	--text-label-lg-size: var(--type-size-40);
+	--text-label-lg-letter-spacing: var(--type-lspc-label-40);
+	--text-label-lg-line-height: var(--type-lh-label-40);
+
+	/* 50 */
+	--text-label-xlg-size: var(--type-size-50);
+	--text-label-xlg-letter-spacing: var(--type-lspc-label-50);
+	--text-label-xlg-line-height: var(--type-lh-label-50);
+
+	/* Link */
+	/* Link Scope */
+	--text-link-weight: var(--type-wg-regular);
+	--text-link-family: var(--type-main);
+
+	/* 10 */
+	--text-link-xsm-size: var(--type-size-20);
+	--text-link-xsm-letter-spacing: var(--type-lspc-link-10);
+	--text-link-xsm-line-height: var(--type-lh-link-10);
+
+	/* 20 */
+	--text-link-sm-size: var(--type-size-30);
+	--text-link-sm-letter-spacing: var(--type-lspc-link-20);
+	--text-link-sm-line-height: var(--type-lh-link-20);
+
+	/* 30 */
+	--text-link-md-size: var(--type-size-40);
+	--text-link-md-letter-spacing: var(--type-lspc-link-30);
+	--text-link-md-line-height: var(--type-lh-link-30);
+
+	/* 40 */
+	--text-link-lg-size: var(--type-size-60);
+	--text-link-lg-letter-spacing: var(--type-lspc-link-40);
+	--text-link-lg-line-height: var(--type-lh-link-40);
+
+	/* 50 */
+	--text-link-xlg-size: var(--type-size-60);
+	--text-link-xlg-letter-spacing: var(--type-lspc-link-50);
+	--text-link-xlg-line-height: var(--type-lh-link-50);
+
+	/* Body */
+	/* Body Scope */
+	--text-body-weight: var(--type-wg-sbold);
+	--text-body-family: var(--type-main);
+
+	/* 10 */
+	--text-body-xsm-size: var(--type-size-20);
+	--text-body-xsm-letter-spacing: var(--type-lspc-body-10);
+	--text-body-xsm-line-height: var(--type-lh-body-10);
+
+	/* 20 */
+	--text-body-sm-size: var(--type-size-30);
+	--text-body-sm-letter-spacing: var(--type-lspc-body-20);
+	--text-body-sm-line-height: var(--type-lh-body-20);
+
+	/* 30 */
+	--text-body-md-size: var(--type-size-40);
+	--text-body-md-letter-spacing: var(--type-lspc-body-30);
+	--text-body-md-line-height: var(--type-lh-body-30);
+
+	/* 40 */
+	--text-body-lg-size: var(--type-size-50);
+	--text-body-lg-letter-spacing: var(--type-lspc-body-40);
+	--text-body-lg-line-height: var(--type-lh-body-40);
+
+	/* 50 */
+	--text-body-xlg-size: var(--type-size-60);
+	--text-body-xlg-letter-spacing: var(--type-lspc-body-50);
+	--text-body-xlg-line-height: var(--type-lh-body-50);
+
+	/* heading */
+	/* heading Scope */
+	--text-heading-weight: var(--type-wg-regular);
+	--text-heading-family: var(--type-main);
+
+	/* 10 */
+	--text-heading-xsm-size: var(--type-size-70);
+	--text-heading-xsm-letter-spacing: var(--type-lspc-heading-10);
+	--text-heading-xsm-line-height: var(--type-lh-heading-10);
+
+	/* 20 */
+	--text-heading-sm-size: var(--type-size-80);
+	--text-heading-sm-letter-spacing: var(--type-lspc-heading-20);
+	--text-heading-sm-line-height: var(--type-lh-heading-20);
+
+	/* 30 */
+	--text-heading-md-size: var(--type-size-90);
+	--text-heading-md-letter-spacing: var(--type-lspc-heading-30);
+	--text-heading-md-line-height: var(--type-lh-heading-30);
+
+	/* Display */
+	/* Display Scope */
+	--text-display-weight: var(--type-wg-sbold);
+	--text-display-family: var(--type-main);
+
+	/* 10 */
+	--text-display-xsm-size: var(--type-size-100);
+	--text-display-xsm-letter-spacing: var(--type-lspc-display-10);
+	--text-display-xsm-line-height: var(--type-lh-display-10);
+
+	/* 20 */
+	--text-display-sm-size: var(--type-size-20);
+	--text-display-sm-letter-spacing: var(--type-lspc-display-20);
+	--text-display-sm-line-height: var(--type-lh-display-20);
+}

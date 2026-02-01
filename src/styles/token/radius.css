@@ -1,0 +1,33 @@
+:root {
+	/* Primitive */
+	--rds-10: 0.125em;
+	--rds-20: 0.25em;
+	--rds-30: 0.375em;
+	--rds-40: 0.5em;
+	--rds-50: 1em;
+	--rds-60: 1.5rem;
+	--rds-70: 2rem;
+	--rds-80: 2.5rem;
+	--rds-90: 3rem;
+	--rds-100: 4rem;
+	--rds-110: 5rem;
+	--rds-120: 6rem;
+	--rds-130: 99999rem;
+	/*  */
+	/* Semantic */
+	/* Micro */
+	--radius-micro-2: var(--rds-10);
+	--radius-micro-4: var(--rds-20);
+	--radius-micro-6: var(--rds-30);
+	--radius-micro-8: var(--rds-40);
+	--radius-micro-16: var(--rds-50);
+	/* Macro */
+	--radius-macro-24: var(--rds-60);
+	--radius-macro-32: var(--rds-70);
+	--radius-macro-40: var(--rds-80);
+	--radius-macro-48: var(--rds-90);
+	--radius-macro-64: var(--rds-100);
+	--radius-macro-80: var(--rds-110);
+	--radius-macro-96: var(--rds-120);
+	--radius-macro-super: var(--rds-130);
+}
