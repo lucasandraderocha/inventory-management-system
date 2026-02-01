@@ -46,6 +46,8 @@ Sua responsabilidade como Front-end Junior é criar o **Core do Gerenciamento de
 
 - **Tecnologia:** Javascript Vanilla (ES6+), HTML5, CSS3.
     
+- **Build Tool:** Vite (para bundling e dev server).
+    
 - **State Management:** Redux (Core/Legacy - `createStore`, `combineReducers`). **Não use Redux Toolkit ainda**, quero ver você sofrendo com o boilerplate para entender o valor dele depois.
     
 - **Estrutura de Arquivos (Obrigatória):** Quero ver a separação de responsabilidades. Sugestão:
@@ -53,13 +55,21 @@ Sua responsabilidade como Front-end Junior é criar o **Core do Gerenciamento de
 ```Plaintext
 /src
   /store
-    actions.js
-    reducers.js
-    types.js (ou constants.js)
+    /actions
+    /reducers
+    /types
     index.js (store creation)
+  /styles
+    /token
+      radius.css
+      colours.css
+      spacing.css
+      typography.css
+    style.css
+    token.css
   /ui
-    render.js (funções de manipulação do DOM)
-    events.js (listeners)
+    /events (listeners)
+    /render (funções de manipulação do DOM)
   index.js (entry point)
   data.js (mock data)
 ```

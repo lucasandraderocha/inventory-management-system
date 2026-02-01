@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css">
     <title>inventory-management-system</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header id="hud-status">
+        <span id="gold-display">Ouro: 1000g</span>
+        <span id="weight-display">Peso: 12kg</span>
+      </header>
+      <main id="shop-container">
+        <nav id="shop-filter">
+        <button data-category="weapon">Arma</button>
+        <button data-category="potion">Poção</button>
+        <button data-category="armor">Armadura</button>
+        <button data-category="all">Todos</button>
+      </nav>
+      <div id="grid-items">
+        <div></div>
+        <div></div>
+      </div>
+      </main>
+      <aside id="inventory-container"></aside>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

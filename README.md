@@ -41,13 +41,21 @@ A organização do código reflete uma estrutura escalável, separando a lógica
 ```text
 /src
  ├── store/
- │   ├── actions.js      # Action Creators (Intenções de mudança)
- │   ├── reducers.js     # Lógica pura de atualização de estado (Imutabilidade)
- │   ├── types.js        # Constantes para Action Types (Evita magic strings)
- │   └── index.js        # Configuração da Store e CombineReducers
+ │   ├── actions/      # Action Creators (Intenções de mudança)
+ │   ├── reducers/     # Lógica pura de atualização de estado (Imutabilidade)
+ │   ├── types/       # Constantes para Action Types (Evita magic strings)
+ │   └── index/        # Configuração da Store e CombineReducers
+ ├── styles
+ │   ├── token/
+ │   │   ├── radius.css
+ │   │   ├── spacing.css
+ │   │   ├── colours.css
+ │   │   └── typography.css
+ │   ├── style.css
+ │   └── token.css
  ├── ui/
- │   ├── render.js       # Funções puras de renderização do DOM
- │   └── events.js       # Event Listeners e Disparos de Actions
+ │   ├── render/       # Funções puras de renderização do DOM
+ │   └── events/      # Event Listeners e Disparos de Actions
  ├── data.js             # Mock Data (Itens da loja)
  └── index.js            # Ponto de entrada da aplicação
 ```

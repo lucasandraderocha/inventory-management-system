@@ -13,6 +13,7 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
-    "redux": "^5.0.1"
+    "redux": "^5.0.1",
+    "the-new-css-reset": "^1.11.3"
   }
 }

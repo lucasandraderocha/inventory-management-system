@@ -37,6 +37,11 @@
 			"trailingCommas": "all"
 		}
 	},
+	"html": {
+		"formatter": {
+			"indentWidth": 4
+		}
+	},
 	"assist": {
 		"enabled": true,
 		"actions": {
