@@ -55,21 +55,13 @@ Sua responsabilidade como Front-end Junior é criar o **Core do Gerenciamento de
 ```Plaintext
 /src
   /store
-    /actions
-    /reducers
-    /types
+    actions.js
+    reducers.js
+    types.js (ou constants.js)
     index.js (store creation)
-  /styles
-    /token
-      radius.css
-      colours.css
-      spacing.css
-      typography.css
-    style.css
-    token.css
   /ui
-    /events (listeners)
-    /render (funções de manipulação do DOM)
+    render.js (funções de manipulação do DOM)
+    events.js (listeners)
   index.js (entry point)
   data.js (mock data)
 ```
