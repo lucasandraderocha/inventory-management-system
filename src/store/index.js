@@ -1,5 +1,5 @@
 import configStore from "./config"
-import reducer from "./reducers";
+import reducer from "./reducer";
 
 const {dispatch, getState, subscribe} = configStore(reducer)
 
