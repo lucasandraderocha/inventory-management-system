@@ -6,3 +6,4 @@ const actionHead = {
     SELL_ITEM: (payload) => sellItemAction(SELL_ITEM, payload)
 }
 export default  actionHead
+console.log("Hello")
