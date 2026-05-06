@@ -98,10 +98,16 @@ const initialShop = [
 ];
 
 function hasBuyIt(state, payload) {
-    return state.map(item => item.name === payload.name ? {
-        ...item,
-        quantity: ++item.quantity
-    } : item)
+    if(state.some(item => item.name === payload.name))
+        return state.map(item => item.name === payload.name ? {
+            ...item,
+            quantity: ++item.quantity
+        } : item)
+        
+    return  [...state, {
+            id: ++state.length,
+            ...payload
+        }]
 }
 
 function hasSellIt(state, payload) {

@@ -50,10 +50,6 @@ function hasCapacity(capacity, weight) {
  */
 function insertToInventory(state, payload) {
     if (state.gold < payload.price || state.capacity <= 0) {
-        console.log({
-            gold: state.gold < payload.price,
-            capacity: state.capacity === 0
-        });
         return state.inventory
     }
 

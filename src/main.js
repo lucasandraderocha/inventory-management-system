@@ -14,16 +14,16 @@ function main() {
     }
     subscribe(render)
 
-    // dispatch(actionShopBuy(SHOP_BUY, {
-    //     name: "Phoenix Feather",
-    //     type: ["material", "rare"],
-    //     price: 300,
-    //     weight: 3,
-    //     icon: "🪶",
-    //     quantity: 1
-    // }))
+    dispatch(actionShopBuy(SHOP_BUY, {
+        name: "Phoenix Feather",
+        type: ["material", "rare"],
+        price: 300,
+        weight: 3,
+        icon: "🪶",
+        quantity: 12
+    }))
 
-    // dispatch(actionShopSell(SHOP_SELL, 2))
+    dispatch(actionShopSell(SHOP_SELL, 2))
     dispatch(actionPlayerBuy(PLAYER_BUY, {
         name: "Phoenix Feather",
         type: ["material", "rare"],
@@ -32,14 +32,7 @@ function main() {
         icon: "🪶",
         quantity: 1
     }))
-    dispatch(actionPlayerBuy(PLAYER_BUY, {
-        name: "Phoenix Feather",
-        type: ["material", "rare"],
-        price: 300,
-        weight: 1,
-        icon: "🪶",
-        quantity: 1
-    }))
+
 }
 
 
