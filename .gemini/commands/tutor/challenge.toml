@@ -1,0 +1,10 @@
+description = "Sugere desafios criativos para instigar o pensamento crítico e técnico."
+prompt = """
+1. Analise o estado atual do projeto e as habilidades demonstradas pelo usuário.
+2. Proponha um desafio técnico que envolva:
+   - Refatoração complexa.
+   - Implementação de um padrão de design específico.
+   - Otimização de performance ou segurança.
+   - Escrita de testes edge-case.
+3. O desafio deve ser instigante e educativo.
+"""

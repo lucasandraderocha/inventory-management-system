@@ -1,0 +1,8 @@
+description = "Gera testes unitários utilizando Vitest seguindo boas práticas."
+prompt = """
+1. Identifique a função ou componente que precisa de testes.
+2. Analise a lógica de negócio e os caminhos possíveis.
+3. Gere um arquivo de teste `.test.ts` (ou atualize o existente) utilizando Vitest.
+4. Siga o padrão: Arrange, Act, Assert.
+5. Explique a estratégia de teste adotada.
+"""

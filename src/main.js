@@ -9,8 +9,9 @@ function main() {
 
     const render = () => {
         const state = getState()
-        console.log(state.playerReducer)
-        console.table(state.shopReducer)
+        state.playerReducer
+        state.shopReducer
+        console.log(state.shopReducer)
     }
     subscribe(render)
 
@@ -23,7 +24,7 @@ function main() {
         quantity: 12
     }))
 
-    dispatch(actionShopSell(SHOP_SELL, 2))
+    dispatch(actionShopSell(SHOP_SELL, 1))
     dispatch(actionPlayerBuy(PLAYER_BUY, {
         name: "Phoenix Feather",
         type: ["material", "rare"],

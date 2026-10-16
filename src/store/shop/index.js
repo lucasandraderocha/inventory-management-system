@@ -3,7 +3,16 @@ export const SHOP_SELL = "IMS//SELL";
 
 export const actionShopBuy = (type = SHOP_BUY, payload) => ({ type, payload })
 export const actionShopSell = (type = SHOP_SELL, payload) => ({ type, payload })
-
+/**
+ * 
+ * @param {object[]} state
+ * @param {number} state[].id
+ * @param {string} state[].name
+ * @param {string[]} state[].type
+ * @param {number} state[].price
+ * @param {number} state[].weight
+ * @param {number} state[].quantity
+ */
 const initialShop = [
     {
         id: 1,
@@ -97,20 +106,49 @@ const initialShop = [
     }
 ];
 
+/**
+ * 
+ * @param {object[]} state
+ * @param {number} state[].id
+ * @param {string} state[].name
+ * @param {string[]} state[].type
+ * @param {number} state[].price
+ * @param {number} state[].weight
+ * @param {number} state[].quantity
+ * @param {number} payload
+ * @returns {object[]}
+ */
 function hasBuyIt(state, payload) {
-    if(state.some(item => item.name === payload.name))
+    if (state.some(item => item.name === payload.name))
         return state.map(item => item.name === payload.name ? {
             ...item,
             quantity: ++item.quantity
         } : item)
-        
-    return  [...state, {
-            id: ++state.length,
-            ...payload
-        }]
+
+    return [...state, {
+        id: ++state.length,
+        ...payload
+    }]
 }
 
+/**
+ * 
+ * @param {object[]} state
+ * @param {number} state[].id
+ * @param {string} state[].name
+ * @param {string[]} state[].type
+ * @param {number} state[].price
+ * @param {number} state[].weight
+ * @param {number} state[].quantity
+ * @param {number} payload
+ * @returns {object[]}
+ */
 function hasSellIt(state, payload) {
+    if (!payload) return
+
+    if (state.some(item => item.id === payload && item.quantity === 1))
+        return state.filter(item => item.id !== payload)
+
     return state.map(item => item.id === payload ? {
         ...item,
         quantity: item.quantity > 0 ? --item.quantity : 0

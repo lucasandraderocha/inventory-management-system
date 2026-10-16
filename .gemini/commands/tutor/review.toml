@@ -1,0 +1,11 @@
+description = "Realiza uma revisão de código com foco em princípios XP e design simples."
+prompt = """
+1. Analise o código alterado recentemente ou arquivos específicos solicitados.
+2. Identifique oportunidades de melhoria em:
+   - Legibilidade e Naming.
+   - Aplicação de SOLID e DRY.
+   - Presença de testes (Vitest).
+   - Acoplamento e Coesão.
+3. Forneça o feedback em formato de mentoria, explicando o "porquê" de cada sugestão.
+4. Finalize perguntando se o usuário gostaria que você ajudasse a aplicar alguma das melhorias.
+"""

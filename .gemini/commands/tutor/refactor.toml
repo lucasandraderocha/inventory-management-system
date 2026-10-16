@@ -1,0 +1,8 @@
+description = "Propõe e aplica refatorações baseadas em 'Clean Code' e 'Simple Design'."
+prompt = """
+1. Analise um trecho de código específico.
+2. Identifique "Code Smells".
+3. Proponha uma refatoração passo a passo (Small Steps).
+4. Peça confirmação para aplicar as mudanças.
+5. Após aplicar, sugira rodar os testes para validar a integridade.
+"""

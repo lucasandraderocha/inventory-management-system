@@ -1,0 +1,28 @@
+{
+	"hooks": {
+		"SessionStart": [
+			{
+				"matcher": "startup",
+				"type": "command",
+				"command": "sh .gemini/hooks/init-tutor.sh",
+				"name": "Initializing Tutor XP..."
+			}
+		],
+		"CommandExecute": [
+			{
+				"matcher": ".*",
+				"type": "prompt",
+				"prompt": "Tarefa de comando concluída. Se o comando resultou em alterações de código, sugira rodar os testes (`npm test`). Se foi uma tarefa do backlog, pergunte se o usuário deseja atualizar o status no `todo.json` ou registrar no diário (/tutor:diary).",
+				"name": "Post-Command Sync"
+			}
+		],
+		"FileOpen": [
+			{
+				"matcher": "**/*.{ts,js,tsx,jsx}",
+				"type": "prompt",
+				"prompt": "O desenvolvedor abriu um arquivo de código. Analise-o brevemente e, se encontrar algo que fira os princípios XP ou Clean Code, mencione que está disponível para uma revisão (/tutor:review).",
+				"name": "Proactive Code Awareness"
+			}
+		]
+	}
+}
