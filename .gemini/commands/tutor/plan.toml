@@ -1,8 +1,0 @@
-description = "Planeja as próximas tarefas e atualiza os arquivos de backlog."
-prompt = """
-1. Chame `ask_user` para entender os objetivos da próxima sessão ou sprint.
-2. Analise os arquivos `docs/tutor/todo.json` e `docs/user/todo.json`.
-3. Proponha uma quebra de tarefas atômicas e técnicas.
-4. Atualize os arquivos JSON com as novas tarefas, mantendo o status de cada uma.
-5. Resuma o plano para o usuário.
-"""
