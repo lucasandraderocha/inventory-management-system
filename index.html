@@ -1,33 +1,57 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <title>inventory-management-system</title>
-  </head>
-  <body>
-    <div id="app">
-      <header id="hud-status">
-        <span id="gold-display">Ouro: 1000g</span>
-        <span id="weight-display">Peso: 12kg</span>
-      </header>
-      <main id="shop-container">
-        <nav id="shop-filter">
-        <button data-category="weapon">Arma</button>
-        <button data-category="potion">Poção</button>
-        <button data-category="armor">Armadura</button>
-        <button data-category="all">Todos</button>
-      </nav>
-      <div id="grid-items">
-        <article class="card">
-          <h2>Título</h2>
-          <p>Descrição do conteúdo</p>
-        </article>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <title>inventory-management-system</title>
+</head>
+
+<body class="w-full max-h-screen flex justify-center p-8 font-main">
+  <div id="app" class="w-xl flex flex-col ring ring-inset ring-default rounded-2xl p-2 gap-2">
+    <header id="hud-status"
+      class="px-4 py-2 flex justify-between items-center w-full ring ring-inset ring-default rounded-lg">
+      <span id="gold-display" class="leading-relaxed"><i class="ph-fill ph-coin-vertical"></i> 1000</span>
+      <span class="leading-relaxed"><i class="ph-fill ph-backpack"></i> 12kg</span>
+    </header>
+    <nav id="shop-filter" class="p-2 flex gap-2 flex-row ring ring-inset ring-default rounded-xl text-xs">
+      <button data-category="all"
+        class="flex-1 px-2 py-0.5 ring ring-inset ring-default rounded-md cursor-pointer hover:bg-primary/10">
+        Todos
+      </button>
+      <button data-category="weapon"
+        class="flex-1 px-2 py-0.5 ring ring-inset ring-default rounded-md cursor-pointer hover:bg-primary/10">
+        Arma
+      </button>
+      <button data-category="potion"
+        class="flex-1 px-2 py-0.5 ring ring-inset ring-default rounded-md cursor-pointer hover:bg-primary/10">
+        Poção
+      </button>
+      <button data-category="armor"
+        class="flex-1 px-2 py-0.5 ring ring-inset ring-default rounded-md cursor-pointer hover:bg-primary/10">
+        Armadura
+      </button>
+      <button data-category="armor"
+        class="flex-1 px-2 py-0.5 ring ring-inset ring-default rounded-md cursor-pointer hover:bg-primary/10">
+        Consumível
+      </button>
+      <button data-category="armor"
+        class="flex-1 px-2 py-0.5 ring ring-inset ring-default rounded-md cursor-pointer hover:bg-primary/10">
+        Acessório
+      </button>
+    </nav>
+    <main id="shop-container" class="flex flex-col flex-1 gap-1 overflow-auto">
+      <div id="grid-items" class="grid md:grid-cols-3 grid-cols-2 grid-row-4 gap-2">
       </div>
-      </main>
-      <aside id="inventory-container"></aside>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    </main>
+    <aside id="inventory-container" class="p-2 ring ring-inset ring-default rounded-lg"></aside>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
 </html>
