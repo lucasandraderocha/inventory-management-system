@@ -1,0 +1,12 @@
+@theme {
+    /* Main Colors */
+    --color-primary: var(--neutral-halo);
+    --color-secondary: var(--neutral-tint);
+    --color-accent: var(--accent-default);
+
+
+    /* Border Colors */
+    --color-default: var(--neutral-default-a16);
+
+    --font-main: var(--type-main);
+}

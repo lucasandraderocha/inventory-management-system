@@ -12,6 +12,8 @@
 	--m90: oklch(0.3646 0.1023 147.61);
 	--m100: oklch(0.1999 0.0489 151.53);
 
+
+
 	/* Neutral */
 	--n10: oklch(0.994 0 0);
 	--n20: oklch(0.8853 0 0);
@@ -23,6 +25,14 @@
 	--n80: oklch(0.3715 0 0);
 	--n90: oklch(0.2686 0 0);
 	--n100: oklch(0.1591 0 0);
+	/* Neutral Alphas*/
+	--n50-a08: oklch(0.6401 0 0 / 0.08);
+	--n50-a16: oklch(0.6401 0 0 / 0.16);
+	--n50-a24: oklch(0.6401 0 0 / 0.24);
+	--n50-a32: oklch(0.6401 0 0 / 0.32);
+	--n50-a40: oklch(0.6401 0 0 / 0.40);
+	--n50-a64: oklch(0.6401 0 0 / 0.64);
+	--n50-a88: oklch(0.6401 0 0 / 0.88);
 
 	/* Secondaries */
 	/* Purple */
@@ -76,17 +86,17 @@
 
 
 	/* Semantic */
-	/* Primary */
-	--primary-halo: var(--m10);
-	--primary-light: var(--m20);
-	--primary-soft: var(--m30);
-	--primary-tint: var(--m40);
-	--primary-default: var(--m50);
-	--primary-tone: var(--m60);
-	--primary-dim: var(--m70);
-	--primary-shade: var(--m80);
-	--primary-dark: var(--m90);
-	--primary-deep: var(--m100);
+	/* Accent */
+	--accent-halo: var(--m10);
+	--accent-light: var(--m20);
+	--accent-soft: var(--m30);
+	--accent-tint: var(--m40);
+	--accent-default: var(--m50);
+	--accent-tone: var(--m60);
+	--accent-dim: var(--m70);
+	--accent-shade: var(--m80);
+	--accent-dark: var(--m90);
+	--accent-deep: var(--m100);
 
 	/* Neutral */
 	--neutral-halo: var(--n10);
@@ -97,8 +107,16 @@
 	--neutral-tone: var(--n60);
 	--neutral-dim: var(--n70);
 	--neutral-shade: var(--n80);
-	--neutral-: var(--n90);
+	--neutral-dark: var(--n90);
 	--neutral-deep: var(--n100);
+	/* Neutral Alphas */
+	--neutral-default-a08: var(--n50-a08);
+	--neutral-default-a16: var(--n50-a16);
+	--neutral-default-a24: var(--n50-a24);
+	--neutral-default-a32: var(--n50-a32);
+	--neutral-default-a40: var(--n50-a40);
+	--neutral-default-a64: var(--n50-a64);
+	--neutral-default-a88: var(--n50-a88);
 
 	/* New */
 	--new-halo: var(--p10);

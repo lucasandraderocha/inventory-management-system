@@ -1,12 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
 	/* Primitive */
 	/* Font Family */
-	--type-main:
-		"Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
-		"Segoe UI Symbol";
+	--type-main: "Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 
 	/* Font Size */
 	--type-size-10: 0.75rem;
